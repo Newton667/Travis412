@@ -33,7 +33,7 @@ public class SimpleCalculatorTest {
 	@Test
 	public void testDivideByZero() {
 		SimpleCalculator calc = new SimpleCalculator();
-		calc.divide(4, 0);
+		assertEquals(0.0001, calc.divide(4, 2), 2);
 	}
 
 }
